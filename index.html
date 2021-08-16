@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Baloo 2', cursive;
+        color: white; /*this makes all the text white */
+        margin: 0px;
+        padding: 0px;
+        background: url('music.jpg');
+        background-repeat: no-repeat;
+        background-size: 1536px 800px;
+    }
+    .left{
+        display: inline-block; 
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 18px;
+        top: 15px; 
+    }
+
+    .mid{
+        /* display: block; */
+        margin: 20px auto; /* to make anything centre set margin auto*/
+        width: 40%;
+        /* border: 2px solid green; */
+
+    }
+    .right{
+        position: absolute; /* it sets accordingly to the parent*/
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{   
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .left img{
+        width: 90px;
+        height: 70px;
+    }
+    .btn{
+        font-family: 'Baloo 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .btn:hover{
+        background-color: rgb(66, 65, 65);
+    }
+    .left div{
+        line-height: 0px;
+        font-size: 30px;
+        margin-left: 17px;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 30%;
+        border-radius: 25px;
+    }
+    .form input{
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        border: 2px solid black;
+        padding: 12px;
+        margin: 12px;
+        border-radius: 12px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        width: 430px;
+        display: block;;
+    }
+    
+</style>
+<body>
+    <header>
+        <!-- Left box for logo  -->
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+            <div>GYM</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons --> 
+        <div class="right">
+            <button class="btn">Call Us Now</button>   
+            <button class="btn">Email Us</button>   
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The GYM</h1>
+        <form action="random">
+        <div class="form">
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your Age">
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your Gender">
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
